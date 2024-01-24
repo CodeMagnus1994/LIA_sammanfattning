@@ -1,5 +1,8 @@
 import React from 'react'
 import {useForm} from 'react-hook-form'
+import { FormControl  } from '@mui/material';
+
+
 
 function ReactForm() {
 
@@ -19,7 +22,7 @@ function ReactForm() {
     console.log(watch("example")) 
 
   return (
-     <form 
+     <FormControl 
      onSubmit={handleSubmit(onSubmit)}>
         
      {/* Input with defaultValue */}   
@@ -33,7 +36,7 @@ function ReactForm() {
      
      {/*Input button*/}
      <input type="submit" />
-   </form>
+   </FormControl>
   )
 }
 
